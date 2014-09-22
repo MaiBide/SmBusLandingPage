@@ -1,0 +1,164 @@
+ <!--By Mai Bide, 9/19/14-->
+ <!doctype html>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <title>H-MIB</title>
+
+    <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+
+    <header >
+      <div id="brand">
+        <h1 id="brandName">Home-Made ImmuneBooster (H-MIB)</h1>
+        <h4 id="brandPhrase">Good Health for Pennies!</h4>
+      </div>
+    </header>
+
+    <section id="productInfo">
+      <ul id="nav">
+       <li><a id="tab1Text" href="#tab1">Health Benefits</a></li>
+       <li><a id="tab2Text" href="#tab2">How To Order</a></li>
+       <li><a id="tab3Text" href="#tab3">Ingredients</a></li>
+      </ul>
+
+      <section id="tab2">
+        <div id="tabActive2"></div>
+        <section class="tabContent"> 
+        <form id="orderForm" action="/login" method="post" prefered>
+            <div id="emailPhNo">
+              <span id="perInfo emailCus"> Email </span>
+              <span id="perInfo PhNos"> Phone Number </span>
+            </div>
+            <div id="emailPhNoIn"> 
+              <input id="emailCusIn" type="text" name="email">
+              <input id="phNumCusIn" type="tel" name="phnoneNum">
+            </div>
+            <div id="name">
+              <span id="perInfo fNameCus"> First Name </span>
+              <span id="perInfo lNameCus"> Last Name </span>
+            </div>
+            <div id="nameIn">
+              <input id="fName" type="text" name="fname">
+              <input id="lName" type="text" name="lname">
+            </div>
+            <!--Shipping Address:-->
+            <div id="shipAddrInput">
+              <span> Street Address</span>
+              <span> City</span>
+            </div id>
+            <div> 
+              <input id="street" type="text" name="StreetNo">
+              <input id="city" type="text" name="city">
+            </div>
+            <div> 
+              <span> State</span>
+              <span> Zip Code</span>
+            </div>
+            <div> 
+              <input id="state" type="text" name="state">
+              <input id="zipCode" type="text" name="zipcode">
+            </div>
+            <div id="quantity">
+              <span > Enter Quantity </span>
+              <input id="qtyIn" type="text" name="quantity">
+            </div>
+            <div class="method ship">
+              <span > Shipment Method </span>
+              <select name="Shipment Type">
+              <option value="USPS" selected>USPS</option>
+              <option value="UPS">UPS</option>
+              <option value="Fedex">Fedex</option>
+              <option value="Other">Other</option></select>
+            </div>
+
+            <div class="method pay">
+              <span > Payment Method </span>
+              <select  name="Payment Type">
+              <option value="Visa" selected>Visa</option>
+              <option value="MasterCard">MasterCard</option>
+              <option value="AmericanExpress">American Express</option>
+              <option value="Paypal">Paypal</option></select>
+            </div>
+            <div id="intuctions">
+              <span> Type any instructions to seller</span>
+              <textarea id="textArea" name="comment">Add any special instructions here</textarea>
+            </div>
+            <button id="orderButton" name="submit"> <strong>Place Order</strong>
+            </button>         
+        </form>
+        </section>
+      </section>
+
+      <section id="tab3">
+        <div id="tabActive3"> </div> 
+        <section class="tabContent">
+        <h2>Home-Made ImmuneBooster (H-MIB) </h2>
+        <div id="image">
+          <img id="productImage" src="H-MIBa.jpg"><!---->
+        </div>
+        <h3>Home-Made ImmuneBooster Ingredients</h3>
+              <ul>
+                  <li> Natural substance A1 = x1 mg!</li>
+                  <li> Natural substance A2 = x2 mg!</li>
+                  <li> Natural substance A3 = x3 mg!</li>
+                  <li> Natural substance A4 = x4 mg!</li>
+                  <li> Natural substance A5 = x5 mg!</li>
+                  <li> Note: x1...x5 depends on the individual</li>
+              </ul>
+        <h3> How to Make Home-Made ImmuneBooster</h3> 
+              <ul>
+                  <li> Get Instructions Sheet from package.</li>
+                  <li> Please follow instructions.     </li>
+              </ul>
+        
+        <h3> Home-Made ImmuneBooster Dosage and Frequency</h3> 
+             <ul>
+                <li> Get Instructions Sheet from package.</li>
+                <li> Please follow instructions.</li>
+            </ul>
+        </section>
+      </section>
+      <section id="tab1">
+        <div id="tabActive1"></div>
+        <section class="tabContent"> 
+        <h2>H-MIB Can Boost Your Immune System and Much More--All Natural and for Pennies per Week!</h2>
+        <h3>How Can Home-Made ImmuneBooster Benefit You?</h3>
+        <ul>
+          <li> How often do you have cold and flu?--H-MIB can help you!</li>
+          <li> How severe is your flu?--ImmuneBooster can help you!</li>
+          <li> How frequent and severe are your allergies?--H-MIB can help!</li>
+          <li> When last were you tested for Pre-Metabolic Syndrome?!--H-MIB can help you to prevent Metabolic Syndrome!</li>
+        </ul> 
+        <h3>What is Home-Made ImmuneBooster?</h3>
+        <ul>
+          <li> Trade secret blend of several natural substances.</li> 
+          <li> Substances are scientifically proven to boost human immune system and reduce oxidation stress!</li>
+          <li> Blending proportions are calculated for each individual.</li>
+          <li> Very cheap compared to the state of te art (See Chart).</li>
+          <li> Taken with water, juice, tea, soup, etc.</li>
+        </ul>
+        </section>
+      </section>
+    </section>
+
+    <footer>
+      <div id="companyInfo">
+        <p class="coInfo1">Home-Made ImmuneBooster</p>
+        <p class="coInfo1">1234 Health Lane, City, State</p>
+        <p class="coInfo1">1-800-000-0000</p>
+        <a href="http://maibide.github.io/TFC_PORTFOLIO/" id="coEmail">
+        H-MIB@Health.com</a>
+        <a href="http://maibide.github.io/TFC_PORTFOLIO/" class="coInfo2">About</a>
+        <a href="http://maibide.github.io/TFC_PORTFOLIO/" class="coInfo2">Privacy & Terms</a>
+      </div>
+      <!--<div id="PrivacyTerms">
+        <a href="https://www.google.com/intl/en/policies/?fg=1" id="PT">Privacy & Terms</a>
+        
+      </div>-->
+    </footer>
+
+</body>
+</html>

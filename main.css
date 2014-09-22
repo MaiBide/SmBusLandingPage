@@ -1,0 +1,432 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*These rules make  code cross-browser compatible*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*-----------------Webpage styling starts here---------------*/
+/*body{
+    border: 1px dashed black;
+}*/
+body {
+    top: 0;
+    min-width: 1050px;/*based on min-width of #companyInfo;it has max min-width*/
+    /*position: fixed;
+    margin-left: 1%;
+    margin-right: 0%;*/
+    box-shadow: #000 0px 0px 900px;
+    height: 98%;
+    font-size:22px;
+    font-weight:bold;
+}
+header {
+    /*min-width: 1100px;*/
+    background-color: blue;/*#16F;*/
+    /*background: rgba(0, 0, 0, .1);*/
+    padding: 9px;
+    padding-top: 25px;
+    box-shadow: inset #000 0px 1px 2px;
+    /*font-size:14px;class diff from header*/
+    height: 70px;/*8%;*/
+
+}
+#brand{
+    border-radius:5px;
+    position: relative;
+    width: inherit;
+    text-align:center;
+    /*vertical-align: bottom;*/
+ }
+#brandName{
+    /*font-size: 40px;
+    vertical-align: middle;*/
+    color: white;
+    font-size:50px;
+    font-weight: bold;
+    display:block;
+    margin:0;
+    padding: 0;
+    margin-top:-20px;
+ }
+ #brandPhrase{
+    /*color: black;
+    font-size: 20px;*/
+    color: white;
+    font-weight: bold;
+    display:block;
+    margin:0;
+    padding: 0;
+    font-size: 20px;
+ }
+ 
+/*--------------Product Information -----------------------------*/
+       /*--------------Common #producInfo Rules-------------------*/
+#productInfo h2{
+    text-align:center;
+    font-size:40px;
+    margin: 20px;
+    padding: 10px;
+    border: 10px;
+}
+#productInfo h3{
+    text-align:left;
+    font-size:30px;
+}
+#productInfo ul{
+     font-size:20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 10px;
+    line-height: 35px;
+    text-indent:40px;
+}
+
+        /*--------------Product Info Section -------------------*/
+#productInfo section,
+#productInfo section:target ~ section {
+   display: none;
+   background-color: brown;
+}
+
+#productInfo section:target,
+#productInfo section:last-child {
+    position: relative;
+    display: block;
+    clear: left;
+    margin: 0 1%;
+    min-width: 800px;/*   for show only */
+    height: 700px;/**/
+    border: 1px solid black; 
+    border: 5px solid orange;  
+    z-index: 1;
+    padding: 10px;
+    background-color: red;
+    background: rgba(0, 0, 0, .1);
+        padding:0;
+    margin:0;
+    border:0;
+    border: 5px solid orange;
+    /*overflow:auto;*/
+}
+        /*--------------Common Styles for Navigation Tabs---------------------------*/
+#nav {
+     position: relative;
+    z-index: 2;
+    margin: 10px .5em 0;
+}
+#nav li {
+    width: 9em;
+    text-align: center;
+    float: left;
+}
+
+.tabContent{
+    position:absolute;
+    padding:0;
+    margin:0;
+    border:0;
+    background-color: inherit;
+    width:inherit;
+    overflow:auto;/**/
+    top: -5px;
+}
+.tabContent ul li{
+    padding-left: 2em;
+    text-indent: -1em;
+
+}
+
+        /*--------------Benefits Tab & Contents-----------------------------*/
+/*div{
+    border: 5px dashed black;
+    background-color: red;
+}*/
+
+#tabActive1{ /* set for tab 1 */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 7em;
+    height: 2.0em;
+    position: absolute;
+    top: -2.25em;
+    left: 2em;
+    border: 5px solid orange;
+    border-bottom: transparent;
+    background-color: inherit;
+    margin-top: -2px; /* top border height */
+    margin-left: 0px; /* left border width */
+    text-align:center;
+}
+ #tab1Text{
+    text-decoration: none;
+ }
+ #tab1Text:hover {
+    color:white;
+    background-color: gray
+ }   
+#tab1 ul{
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+
+           /*--------------Order Product Tab & Contents------------------------*/
+#tabActive2{ /* set for tab 2 */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 7em;
+    height: 2.0em;
+    position: absolute;
+    top: -2.25em;
+    left: 10.2em;
+    border: 5px solid orange;
+    border-bottom: transparent;
+    background-color: inherit;
+    margin-top: -2px; /* top border height */
+    margin-left: 0px; /* left border width */
+    text-align:center;
+}
+#tab2Text{
+    text-decoration: none;
+ }
+ #tab2Text:hover {
+    color:white;
+    background-color: gray;
+ }
+
+#emailPhNo{
+    margin-top: 30px;
+}
+form div{
+    margin-left: 20px;
+}
+input{
+    position: relative;
+    display: inline-block;
+    margin-bottom:10px;
+    font-size: 20px;
+    height:22px;
+    width: 20em;
+}
+span{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    height:22px;
+    width: 20em;
+}
+#zipCode{
+    width:3em;
+}
+#quantity {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    height:22px;
+    width: 20em;
+ }
+ #qtyIn{
+      width: 1.5em;
+  }
+ .method{
+    position: relative;
+    display: block;
+    font-size: 20px;
+    height:22px;
+    width: 20em;
+    margin-top:40px;
+}
+#payMethod{
+    position: relative;
+    display: block;
+    font-size: 20px;
+    height:22px;
+    width: 20em;
+    margin-top:20px;
+}
+select{
+    position: relative;
+    display: block;
+    font-size: 20px;
+    height:22px;
+    width: 5em;    
+}
+#intuctions{
+position: relative;
+    display: block;
+    font-size: 20px;
+    height:50px;
+    width: 20em;
+    margin-top:40px;
+}
+
+ #textArea{
+    height:40px;
+     width: 50em;
+  }
+#orderButton{
+        margin-top:40px;
+     border-radius: 10px;
+     font-size:30px;
+     text-align:center;
+     margin-left:13em;
+     background-color:gray;
+  }
+  #orderButton:active{
+     background-color:green;
+  }
+
+           /*--------------Product Specs Tab & Contents-------------------------*/
+#tabActive3{ /* set for tab 3 */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 7em;
+    height: 2.0em;
+    position: absolute;
+    top: -2.25em;
+    left: 18.5em;
+    border: inherit;/*5px solid orange;*/
+    border-bottom: transparent;
+    background-color: inherit;
+    margin-top: -2px; /* top border height */
+    margin-left: 0px; /* left border width */
+    text-align:center;
+}
+#tab3Text{
+    text-decoration: none;
+ }
+ #tab3Text:hover {
+    color:white;
+    background-color: gray
+ }
+
+#tab3 ul{
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+#image{
+    position: relative;
+    margin-bottom: 10px;
+    text-align:center;
+    height:100px;
+ }
+ #productImage{
+    height:inherit;
+}
+#tab3 ul{
+     text-align:center;
+}
+#tab3 h3 {
+    text-align:center;
+ }/**/
+
+
+/*--------------Footer -----------------------------*/
+/*footer *{
+    border: 1px dashed black;
+    border-radius: 10px;
+}*/
+
+footer {
+     /*position: fixed;
+     border: 1px dashed black;
+    min-width: 1200px;*/
+    background-color: #16F;
+    background: rgba(0, 0, 0, .3);
+    padding: 9px;
+    padding-top: 25px;
+    box-shadow: inset #000 0px 1px 2px;
+    font-size:16px;/*Frm here, diff from header*/
+    margin-top:0px;
+    height: 25px;s
+    border-radius: 0, 0;
+ }
+
+ #companyInfo{
+    position: relative;
+    float: left;
+    /*min-width: 1050px;inherit;
+    height: inherit;*/
+    margin-left: .5%;
+    text-align:left;/*right;*/
+ }
+   .coInfo1{
+    position: relative;
+    display:inline-block;
+    margin-top:0px;
+    margin-right:11px;
+    margin-left:11px;
+ }
+ #coEmail{
+    /*position: relative;
+    display:inline-block;
+    margin-top:0px;*/
+    color:black;
+    margin-right:15px;
+    margin-left:11px;
+    text-decoration: none;
+ }
+ #coEmail:hover {
+    text-decoration: underline;
+}/**/
+ 
+ .coInfo2{
+    /*position: relative;
+    display:inline-block;
+    margin-top:0px;*/
+    margin-right:0px;
+    margin-left:35px;
+    text-decoration: none;
+ }
+ .coInfo2:hover {
+    text-decoration: underline;
+ }
+
+
+
+
+
